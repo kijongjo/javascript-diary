@@ -122,12 +122,31 @@ ex) http://127.0.0.1:53876/day2/next.html?id=asd&pwd=fasdf 에서는 id=asd&pwd=
 
 
 <input>
-속성값 type="종류" text인지 submit버튼인지 reset버튼인지 date달력인지 설정가능
+속성값 type="종류" text인지 submit버튼인지 reset버튼인지 date달력인지 radio인지 checkbox인지 menu인지 설정가능
 속성값 name=""     이름을 나타냄
 속성값 placeholder="내용" text의 경우 아무것도 적지않으면 해당 내용이 적혀잇다.
 속성값=value="이름" 버튼에 표시되는 이름을 나타냄
 
 
+*type radio 에서
+어느 한쪽에만 적히게 하려면 하나이상의 radio tag들의 name 속성을 같게 해주어야 한다. 
+
+
+*블럭요소와 인라인 요소 ? 
+블럭 요소란 h1,h2등 끝까지 공간을 가지고 있는 것들이다. 이 테그가 적힌 줄에는
+다른 테그가 들어올 수 없다. 
+인라인 요소 해당 테그가 적히는 공간 외의 공간에는 다른 테그가 그 공간을 자치할 
+수 있다. 
+
+<select>
+선택기능이 있는 요소를 만들어 낸다. 
+<select name="">
+<option value="이름">이름
+     '
+     ' 
+     필요한 갯수만큼 입력 
+  
+  
 
 
 
