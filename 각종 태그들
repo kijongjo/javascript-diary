@@ -1,0 +1,17 @@
+<h수>
+글자의 크기를 나타낸다. 
+
+<ol>
+ordered list의 약자로 번호를 주어 순서대로 출력한다. 
+
+<ul>
+unordered list의 약자
+
+<meta charset="utf-8">   
+explorer에서 사용시 한글이 보이도록하기위해 설정해준다.
+
+
+*meta 태그란? 
+문서 그 자체를 설명하는 태그를 말한다. 
+
+
