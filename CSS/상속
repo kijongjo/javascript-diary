@@ -13,3 +13,15 @@ ex)
 <style>
 div 자식관계에 있는 p만의 style을 바꾸고 싶을때 사용한다. 
 div>p{color:blue;}
+
+
+
+
+*상속을 이용한 크기 설정
+%를 사용한다.
+ex)
+body의 부모는 html이고 %는 부모대비 이 %정도의 크기로 유지하도록 설정하는 것을 말한다. 
+body{font-size:70%}
+
+
+
