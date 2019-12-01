@@ -1,0 +1,18 @@
+객체를 생성하는 명령어가 있다.
+var 객체이름= {};로 만들 수 있다. 
+또한 만든 객체에 대해서 속성값을 추가할 수가 있는데 
+객체이름.만들고싶은속성이름="넣고싶은데이터";로 정의한다. 
+처음 객체를 만들면 속성값은 아무것도 없는데 
+마치 있는 것처럼 생각하고 대입을 하게되면 자동으로 만들어진다. 
+
+ex)
+ var person = {};
+      //property를 볼 수가 있다. 
+        console.dir(person);
+        //object class의 property는 proto하나 있다. 
+        //속성을 추가할 수 있다. name은 property가 없었는데 이걸 하면 생기게됨.
+        person.name="홍길동";
+        
+        person.name="반장";
+        person.age=20;
+        console.dir(person);
