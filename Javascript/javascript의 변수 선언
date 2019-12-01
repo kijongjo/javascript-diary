@@ -11,3 +11,12 @@ document.write(변수명)
 document는 문서 전체를 가리키는 객체이다. 
 ex)
   var a = 10;
+  
+  *eval 기능 
+  string 형식의 정보를 eval을 통해 수와 사칙연산을 인식해 계산하도록 한다. 
+  ex)
+  var msg = "3*2";
+  var data = eval(msg);
+  
+  6이 나온다. 
+  
