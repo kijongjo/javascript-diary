@@ -1,0 +1,58 @@
+1)JSON이란 경량데이터 교환방식이라고 한다. 
+
+미리 정의해 놓은 함수가 있다면 함수의 이름을 쓰고 없다면 익명함수를 써서 정의할 수 있다. 
+
+객체 생성+안에 함수 설정 
+ex)
+ var p2 = {
+
+            name: "둘리",
+            age: 65000012,
+            gender: "남",
+            //미리 정의해 놓은 함수가 있다면 함수의 이름. 없다면 익명함수를 써도됌.
+            isAdult: function() {                                             <-익명함수로 설정했다.
+                var result;
+                //멤버변수를 지칭할 때에는 this로 지칭한다. 
+                if (this.age > 18) {
+                    result = "미성년";
+                } else {
+                    result = "미성년";
+                }
+                console.log(this.name + "씨는" + result + "입니다.");
+            }
+        }
+
+
+2)생성자 만들기
+
+생성자라는 것을 만들어 특정 분류의 기본정보값을 미리 설정해 놓으면 나중에 사용하기 편하다.
+생성자 함수는 함수이름의 첫글자를 대문자로 만든다. 
+ex)
+ //생성자 함수 첫자를 대문자로 쓴다. 
+        function Person(name, age, gender, job) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+            this.job = job;
+            this.isAdult=function() {
+                var result;
+                if (this.age > 18) {
+                    result = "성인";
+
+
+                } else {
+                    result = "미성년";
+
+                }
+                console.log(this.name + "씨는" + result + "입니다.");
+
+
+
+            }
+            
+            
+  기존에 만들어진 생성자로 객체를 생성하는데  매개변수값에 기본정보를 넣는다. 
+   var sin = new Person("신데렐라",14,"여","가정부");
+        console.log(sin);
+        sin.isAdult();
+  
