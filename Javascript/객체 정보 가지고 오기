@@ -1,0 +1,28 @@
+body에서 사용된 태그에 id를 부여하고 난 후에 scirpt에서 id를 이용해 객체의 정보를 가지고와 
+활용할 수가 있다. 
+
+1) 
+텍스트 콘텐츠에 입력된 정보를 가지고 오기 .
+
+script에서 
+document.getElementById("ID");를 이용한다
+객체의 정보를 가지고 온 후에는 id.value를 이용해 입력된 정보를 출력할 수가 있다. 
+응용해서 
+텍스트id.value="입력하고싶은내용";을 하게되면 정보입력이 거꾸로 가능하다. 
+
+
+ function cal() {
+            //텍스트에서 값 가지고 오기 
+            document.getElementById("txt");
+            //id를 가지고 온다
+            console.log(txt);
+            //.dir->객체를 디렉토리처럼 볼수 있다
+            //.value ->객체의 여러 정보중에 내가 쓴 것만 볼 수 있다.
+            console.dir(txt.value);
+            //  alert("Hello world");
+            //텍스트 창에 담기 
+            txt.value = "메리크리스마스";
+            
+            <body>
+             <input type="button" value="전송" onclick="cal();">
+             </body>
