@@ -162,6 +162,16 @@ ex)
   
  9)내장 객체 window 
  javascript에 내장되어있는 객체로써 window창이 켜지게 되면 실행되도록 하는 명령어이다. 
+ 
+ 
+ *window.onload
+ 윈도우창 로딩이 끝나면 특정함수를 부르도록하는 명령어이다. 
+ ex)
+  window.onload=showScreen();
+  익명함수로도 쓸 수 있다.
+   window.onload=function (){
+            console.log("자동으로 실행됩니다.")
+ 
  *setTimeout(함수이름,초) 
  java의  sleep과 같은 기능을 한다. setTimeout과 setInterval이 있는데
  setTimeout은 지정 초 후에 한번만 하고 setInterval은 지정 초마다 한번씩 특정 함수를 발동시킨다. 
@@ -171,6 +181,8 @@ ex)
  
  주의:함수에서 ()를 쓰는 경우와 ()를 쓰지 않는 경우 
  ()는 return값이 있을 때 사용한다. 없는경우에는 ()를 쓰지 않는다. 
+ 
+ 
  
  
  
