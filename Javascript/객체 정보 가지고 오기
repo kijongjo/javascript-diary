@@ -182,7 +182,31 @@ ex)
  주의:함수에서 ()를 쓰는 경우와 ()를 쓰지 않는 경우 
  ()는 return값이 있을 때 사용한다. 없는경우에는 ()를 쓰지 않는다. 
  
+ 10)음악 객체 audio 
+ var 변수명 =new Audio("오디오주소")
+ .start 음악시작
+ 변수명.currentTime=0 <-첫부분으로 되감기
+ .pause 음악멈춤
  
+ 
+ 11)body.onkeydown
+ body.onkeydown=키정보를 보내고싶은 함수명
+ java의 키리스너와 같은기능 ascii코드로 정보를 가지고온다. 
+ 
+ ex)
+  body.onkeydown = moveRabbit;
+
+ function moveRabbit(e) {    <-관습적으로 매개변수는 관용적으로 event나 e를 쓴다. 
+            console.log("키보드 눌림");
+            if (e.keyCode == 38) {
+                rabbitY -= 5;
+            } else if (e.keyCode == 40) {
+                rabbitY += 5;
+            } else if (e.keyCode == 37) {
+                rabbitX -= 5;
+            } else if (e.keyCode == 39) {
+                rabbitX += 5;
+            }
  
  
  
