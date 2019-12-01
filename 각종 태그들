@@ -148,7 +148,70 @@ ex) http://127.0.0.1:53876/day2/next.html?id=asd&pwd=fasdf 에서는 id=asd&pwd=
   
   
 
+<canvas>
+그림판 역할을 한다. 
+  <canvas id="myCanvas" width="500px" height="500px">
+  
+script에서 
+canvas의 정보를 가지고오고 
+ var canvas= document.getElementById("myCanvas");
 
+가져온 canvas객체를 통해 2dcontext 객체를 가지고 온 후에 
+ var ctx = canvas.getContext("2d");
+ 
+ 필요한 명령어를 삽입한다. 
+   //그림 그리기 시작 
+            ctx.beginPath();
+            //시작 지점으로 이동
+            ctx.moveTo(50,50);
+             //선긋기 
+            ctx.lineTo(150,50);
+            //선긋기
+            ctx.lineTo(50,150);
+            
+            ctx.fillStyle="yellow";
+            //사각형 그리기 
+            ctx.fillRect(100,100,300,300);
+            
+            //경로 닫기 
+            ctx.closePath();
+            //선 색상 변경
+            ctx.strokeStyle="aqua";
+            //테두리 선그리기  
+            ctx.stroke();
+            //이름 채워넣기 
+            var name ="아이유(전)";
+            ctx.font="35px 나눔 펜글씨";
+            ctx.fillText("이름: "+name , 20,80);
+             //이미지 넣기 
+            var IU=new Image();
+             //이미지 소스 
+            IU.src="../images/IU1.jpg";
+             //그림그리기 함수 
+            ctx.drawImage(IU,0,0,100,100)
+            
+            *그림이 움직이는 것처럼 설정하기 
+            두개의 이미지를 같은 좌표에 겹친 후 if문을 통해 번갈아가면 나타나도록설정한다.
+            
+           ex)
+            function drawScreen() {
+            counter++;
+            console.log(counter);
+            //움직이는 것처럼 보이게 하기 
+            ctx.drawImage(bgImg, 0, 0, 800, 600);
+            if(counter%2==1){
+            ctx.drawImage(rabbit1, 20, 200, 800, 400);}else{
+            ctx.drawImage(rabbit2, 20, 200, 800, 400);}
+        }
+          또한 setinerval과 조합해 사용한다.
+          ex)
+             drawScreen();
+            //1회 반복 window.setTimeout(함수명,지연시간);
+            //계속 반복 window.setInterval(함수명,지연시간);
+            window.setInterval(drawScreen,50);
+            
+            
+ 
 
  
 
