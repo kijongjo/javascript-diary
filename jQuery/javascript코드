@@ -1,0 +1,5 @@
+*onclick
+  $("#아이디").on("click", function() {
+  클릭시 할 행동}
+ $("#btn").on("click", function() { $("#div1").text($("#txt").val(prompt1));
+ });
