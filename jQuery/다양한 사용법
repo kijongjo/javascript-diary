@@ -8,8 +8,11 @@
 *$(document).ready(function(){}의 경우에는 
    $(function() {});로 줄여 쓸수도 있다. 
    
-           
-           
+*id 뿐만 아니라 class 태그명도 올수 있다.
+
+태그명은 "태그명" 으로 쓰고 
+class는 ".클래스명"으로 쓴다. 
+
            
            
            
