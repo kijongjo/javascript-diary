@@ -135,5 +135,28 @@
     다른 contents가 영향을 받지 않도록 만들어서 겹쳐 들어갈 수 있다.
     float기능을 없애기 위해서는 clear:both;를 쓴다. 
     
+    *CSS선택자 지정해 바꾸기 
+    class 안에 있는 여러개의 구성원들중 특정 몇번째 번호를 가지는 것들의 style만 바꾸기 
+    .클래스이름:nth-child(배수등 번호들)
+    ex)
+      /*    7배수의 번호를 가지는 자식들에 스타일 적용하라 .*/
+        .box:nth-child(7n) {
+            background-color: antiquewhite;
+        }
+
+        /*    22번부터 이후 모든 box 폰트색 배경*/
+        .box:nth-child(n+22) {
+            color: royalblue;
+        }
+
+        /*    1번부터 4번째까지 box 배경색 초록으로 */
+        .box:nth-child(-n+5) {
+            background: green;
+        }
+
+        /*    16번부터 19번째까지 box배경색 pink로 변경하기 */
+        .box:nth-child(n+16):nth-child(-n+19){background:red;}
+    
+    
     
     
