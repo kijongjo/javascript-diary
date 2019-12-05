@@ -1,0 +1,17 @@
+setTimeout(함수명,초);
+1번 진행되고 종료한다. 주어진 초 이후에 실행한다. 
+
+
+setInterval(함수명 , 초);
+계속 진행되고 특별한 명령이 없으면 종료되지 않는다. 
+
+
+ 
+ 
+ 
+ clearInterval(setInterval을 담은변수명);
+ interval을 종료한다.
+ 종료를 하기위해선 setInterval을 함수에 담아야한다. 
+ 
+ 
+ 
