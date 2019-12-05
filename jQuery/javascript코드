@@ -180,5 +180,8 @@ ex)
             });
         });
              
-                         
+  *특정 contents에 가지고 있는 속성값을 가지고 오거나 변경/추가하기 
+   $("태그or id or클래스").attr("속성","변경사항");
+   ex)
+    $("img").attr("src","../images/rabbit1.png");
                          
