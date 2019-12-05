@@ -3,3 +3,62 @@
   클릭시 할 행동}
  $("#btn").on("click", function() { $("#div1").text($("#txt").val(prompt1));
  });
+
+
+*css 사용
+.css(style에서 사용하던 요소들);
+
+ex)
+  $("#rabbit").css({width:"300px",
+                         height:"300px"});
+                         
+                         
+*E[A명령어] 시리즈
+$(아이디)를 적어서 지정된 태그에 명령을 줄 수도 있지만 아이디 없이 
+부여된 속성값으로만 태그를 지정해 명령을 줄 수도 있다. 그것이 E[A명령어]시리즈다.
+1)E[A] : A 속성이 존재하는 요소만 선택하고 싶을때 이것을 쓴다.
+ex)
+a태그중에서 target이라는 속성이 있는 요소만 선택하라는 뜻
+     $("a[target]").css("background-color", "pink");
+
+2)E[A=v]:a 속성의 값이 v인 요소만 선택하게 된다.
+ex)
+네이버링크만 파란색으로 변화시키기
+$("a[href='http://www.naver.com']").css("background-color", "aqua");
+3)E[A!=V]:a 속성의 값이 v가 아닌 요소만 선택
+
+4)E[A^=V]:a 속성의 값이 v로 끝나는 요소만 선택
+5)E[A-=V]:a 속성의 값이 v를 포함(공백포함)하는 요소만 선택
+
+
+
+*.value()
+$("#아이디").val()로 사용할 수 있다. 
+특이한점은 이 형식 하나로 getter와 setter 형식 둘 모두를 사용할 수 있다.
+
+$("#아이디").val() text에 적혀있는 값을 가지고 온다. 
+$("#아이디").val("적고싶은 내용") text에 적고싶은 값을 보낸다. 
+
+*json 타입으로 표현하기 
+ex)
+ $(function() {
+            $("#btn").on("click", function() {
+                var wdt = parseInt();
+                var hit = parseInt($("#height1").val());
+               
+                $("#img1").css({
+                    "width" : $("#width1").val()+"px" ,
+                    "height" : $("#height1").val()+"px"
+                });
+           
+             
+            });
+
+
+        });
+
+
+
+
+                         
+                         
