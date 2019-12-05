@@ -1,0 +1,15 @@
+자바 스크립트 라이브러리 시스템으로 javascript를 좀더 사용하기 쉽도록 만들었다. 
+
+
+사용법 
+$()형태이며 $(document).ready(function(){실행할 내용})이 처음 시작이다. 
+
+javascript에서 windwo.onload와 같다. 
+function 안에서는 
+$("#id").속성(변경할 내용) 등이 올 수 있다. 
+
+
+
+ex)
+아이디 box2를 가지는 contents에 대해서 css 변경하기 
+  $("#box2").css("background", "red");
