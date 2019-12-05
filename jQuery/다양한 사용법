@@ -1,0 +1,15 @@
+*jQuery의 경우에는 모든 함수를 실행 후 자기 자신의 객체를 리턴하도록 설계해 놓았다. 
+그렇기에 하나의 객체에 .속성(내용)을 연결해 한꺼번에 표현할 수도 있다. 
+
+ $("#box2").css("background", "red")
+           .css("color", "yello")
+           .css("color","green");
+           
+*$(document).ready(function(){}의 경우에는 
+   $(function() {});로 줄여 쓸수도 있다. 
+   
+           
+           
+           
+           
+           
