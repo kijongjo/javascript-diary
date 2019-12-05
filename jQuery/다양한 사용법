@@ -12,6 +12,44 @@
 
 태그명은 "태그명" 으로 쓰고 
 class는 ".클래스명"으로 쓴다. 
+ $("span").css("background-color","red");
+ $(".class").css("background-color","red");
+
+*id가 들어가는 곳에 동시에 두개의 아이디,클래스,태그가 들어갈 수도 있다 .
+$("두개의 아이디").css(..)
+ex)
+  $("span,div").css("background-color","red");
+  
+  
+*~된 class,id,태그로 분류해 명령어 실행하기 
+~에 속해있는, ~속성을 가진 , ~것이 on되어있지 않은,class,id 문법이 존재한다. 
+여기에서 +는 태그의 형제 태그를 말하게 된다.
+        >는 태그에 속한 태그를 말한다. 
+ex)
+input에서 checked된 것의 span 을 찾는다. 
+$("input:checked+span").css("background-color","red");
+때문에 input은 왼쪽에 span은 오른쪽에 있어야 위의 명령어를 적용할 수가 있다. 
+<input type="checkbox" name="fruit" id=""> <span>바나나</span>   <-적용된다.
+<span>오렌지</span>   <input type="checkbox" name="fruit" id=""> <-적용되지 않는다.
+
+ex)
+input에서 checked 속성을 가진 것중에 span을 바꾸어라 
+
+
+
+ ex)
+ div에 속한 span을 바꾸어라 라는 것은 
+ div>span이 된다. 
+$("div>span").css("background-color","red");
+
+
+ex)
+ <div>
+    
+      <span>오렌지</span>   span이 바뀌게 된다. 
+
+
+              
 
            
            
