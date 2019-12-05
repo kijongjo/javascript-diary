@@ -1,0 +1,21 @@
+내가 만든 프로그램에 대해서 jquery 파일을 일일이 client들에게 보내게 되면 
+데이터가 무겁다. jquery를 사용하기 위한 소스 파일들은 변함 없이 공통적으로 
+사용되기에 it공룡들은 링크를 통해 손쉽게 접근할 수 있도록 환경을 조성해 주었다. 
+그래서 내 서버에서 jquery 파일을 받아가는 것이 아니라 수신자의 가장 가까운 지역에
+있는 데이터 센터에서 jquery 파일을 받도록 한것이 cdn이다.
+
+ex)
+
+구글의 경우
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"이다. 
+
+사용법은 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 으로 표현하는데 
+ 주의할 점은 script 태그에 링크를 걸고 나서 그 안에 내용을 쓰면 안되고 
+ 새로운 script 태그를 만들어서 사용해야 한다는 것이다. 
+ 
+ 옳은 사용방법 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>쓸 내용 </script>
+
