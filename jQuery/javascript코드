@@ -88,6 +88,13 @@ ex)
   
   *fadeIn(),fadeOut()
   show hide와 다른 모션의 사라졌다 나타났다를 한다. 괄호안에 수를 넣을 수도 있다.
+  **fadeOut(json 타입으로 넣기)
+  fadeOut({
+   duration:시간, complete:function(){       <-duration 은 몇초걸리는지 설정 ,complete는 완료후 무엇을 
+   실행할 내용
+   }
+  })
+  
   
 *클래스 부여하기 
 만약에 css에서 특정 클래스에만 부여되는 style 속성이 있다고 하면 jquery에서 
