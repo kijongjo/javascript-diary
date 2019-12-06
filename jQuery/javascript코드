@@ -83,7 +83,12 @@ ex)
               $("img[src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWK_TTe4InWCk4IiZEzR_IAGV4Yh7wQedH00oGtZGfImR-n1ppug&s']").show(300);});
               //0.3초뒤에 천천히숨김. 이후에는 function이 가동된다.  
 
-
+*toggle(); 
+  show hide를 한번에 하도록 한다. 
+  
+  *fadeIn(),fadeOut()
+  show hide와 다른 모션의 사라졌다 나타났다를 한다. 괄호안에 수를 넣을 수도 있다.
+  
 *클래스 부여하기 
 만약에 css에서 특정 클래스에만 부여되는 style 속성이 있다고 하면 jquery에서 
 클래스를 부여해 class에 설정된 style을 적용할 수가 있다. 
