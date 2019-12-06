@@ -210,7 +210,13 @@ canvas의 정보를 가지고오고
             //계속 반복 window.setInterval(함수명,지연시간);
             window.setInterval(drawScreen,50);
             
+  *태그 안에 하이퍼링크로 자바 스크립트 함수 불러오기
+  "javascript:함수명();"로 쓰면 함수를 불러온다. 
             
+         ex)
+         <a href="javascript:hidediv();">
+         
+    
  
 
  
