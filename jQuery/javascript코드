@@ -197,3 +197,5 @@ ex)
    ex)
     $("img").attr("src","../images/rabbit1.png");
                          
+   *.appendTo("클래스명") 
+   해당 클래스명을 가진 구역에 붙인다. 
