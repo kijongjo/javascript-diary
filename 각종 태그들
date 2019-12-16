@@ -219,7 +219,13 @@ canvas의 정보를 가지고오고
     
  
 
- 
+		<input type="hidden"  value="" />
+  사용자에게는 보이지 않는 text를 만들어 준다. form과 같이 써 다른 page로 정보를 보내고자 할 때 쓸 수 있다.
+
+ex)
+ <form action="" name="frm">
+		<input type="hidden" name="no" id="no" value="<%=vo.getPno()%>" />
+	</form>
 
  
 
