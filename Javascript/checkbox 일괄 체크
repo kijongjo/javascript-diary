@@ -1,0 +1,43 @@
+	1)
+  윈도우가 실행되면 checkAll이라는 이름을가진 checkbox의 정보를 가지고온다. 
+   var ck = document.getElementById("checkAll");
+	2)
+  checkAll이름을 가진 것을 클릭하면 아래의 function이 실행된다.
+	ck.onclick=function(){
+	
+  3)
+  checkAll의 checked가 true false형태로 나타난다.  
+		console.dir(ck);
+	4)
+   ck라는 이름을 가지고 있는것들을 전부가지오라는 의미이다. 
+	 가지고올때 담겨지게 되는 변수는 배열의 형태로 담겨지고 인덱스는 각각의 체크박스를 나타낸다. 
+	var items=document.getElementsByName('ck');
+		console.dir(items);
+	    for(var i =0; i<items.length;i++){
+	    	
+	    	var box=items[i]
+	 5)
+    checked가 true가 되면 box의 checked도 true가 되도록 설정한다.
+	    	box.checked=ck.checked;
+	    	
+	    	
+	    }
+	
+	}
+		
+	}
+	
+
+
+</script>
+</head>
+<body>
+				<input type="checkbox" name="ck" id="" class="box" />1
+				<input type="checkbox" name="ck" id="" class="box" />2
+				<input type="checkbox" name="ck" id="" class="box" />3
+				<input type="checkbox" name="ck" id="" class="box" />4
+				<input type="checkbox" name="ck" id="" class="box" />5
+				<input type="checkbox" name="ck" id="" class="box" />6<br />
+				<input type="checkbox" name="ck" id="checkAll"  />선택
+</body>
+</html>
